@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300;400&family=Bebas+Neue&family=Grape+Nuts&family=Koulen&family=Montserrat&family=Oswald:wght@300;400&family=Roboto:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300;400&family=Bebas+Neue&family=Grape+Nuts&family=Koulen&family=Montserrat&family=Oswald:wght@300;400&family=Roboto:wght@300&display=League+Gothic&family=Source+Sans+Pro&family=Staatliches&display=swap');
 
 body{
 	font-family: 'Akshar', sans-serif;
@@ -24,7 +23,7 @@ nav{
 }
 
 ul li{
-    margin: 1vw;
+    margin: 1.5vw;
 }
 
 nav ul a:hover{
@@ -33,6 +32,7 @@ nav ul a:hover{
 } 
 
 .textNav{
+	font-family:'Source Sans Pro', sans-serif;
 	color: floralwhite;
     list-style: none;
     text-decoration: none;
@@ -191,6 +191,10 @@ nav a img{
 
 	p{
 		font-size: 2rem;
+	}
+
+	.li1{
+		margin-left: 55vw;
 	}
 
 	nav a img{
@@ -448,6 +452,10 @@ nav a img{
 
 	p{
 		font-size: 2rem;
+	}
+
+	.li1{
+		margin-left: 55vw;
 	}
 
 	nav a img{
@@ -714,6 +722,10 @@ nav a img{
 		font-size: 2rem;
 	}
 
+	.li1{
+		margin-left: 55vw;
+	}
+
 	nav a img{
 		width: 8vw;
 	}
@@ -829,11 +841,13 @@ nav a img{
 .funcion{
     grid-area: funcion;
     text-align: center;
+	margin-top: 5vh;
 }
 
 .form2{
     grid-area: form2;
     text-align: center;
+	margin-top: 5vh;
 }
 
 .form4{
@@ -843,6 +857,7 @@ nav a img{
 .encom{
     grid-area: encom;
     text-align: center;
+	margin-top: 5vh;
 }
 
 .imge{
@@ -891,6 +906,10 @@ nav a img{
 		font-size: 2rem;
 	}
 
+	.li1{
+		margin-left: 55vw;
+	}
+
 	nav a img{
 		width: 8vw;
 	}
@@ -905,15 +924,15 @@ nav a img{
 	.funcion{
 		grid-area: funcion;
 		width: 40vw;
-		margin-left: 10vw;
-		margin-right: 5px;
+		margin-left: 9vw;
+		margin-right: 8px;
 	}
 
 	.form2{
 		grid-area: form2;
 		width: 40vw;
-		margin-right: 10vw;
-		margin-left: 5px;
+		margin-right: 9vw;
+		margin-left: 8px;
 	}
 
 	.imgese{
@@ -1089,6 +1108,10 @@ nav a img{
 
 	p{
 		font-size: 2rem;
+	}
+
+	.li1{
+		margin-left: 55vw;
 	}
 
 	nav a img{
