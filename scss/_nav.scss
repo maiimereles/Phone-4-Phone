@@ -1,0 +1,43 @@
+nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+
+  a img {
+    width: 20vw;
+  }
+}
+
+ul li {
+  margin: 1.5vw;
+}
+
+nav ul a:hover {
+  font-weight: 600;
+  color: #EAFF00;
+}
+
+.textNav {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: rgb(255, 250, 240);
+  list-style: none;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.bgBlackNav {
+  background-color: rgba(0, 0, 0, 1);
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+@media only screen and (min-width: 1024px) {
+  .li1 {
+    margin-left: 55vw;
+  }
+
+  nav a img {
+    width: 8vw;
+  }
+}

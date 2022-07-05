@@ -1,6 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300;400&family=Bebas+Neue&family=Grape+Nuts&family=Koulen&family=Montserrat&family=Oswald:wght@300;400&family=Roboto:wght@300&display=League+Gothic&family=Source+Sans+Pro&family=Staatliches&display=swap');
+//imports
+@import "_nav";
+@import "_var";
+@import "_mixins";
 
 body {
+  background-image: url(../img/fondo1.jpg);
   font-family: 'Akshar', sans-serif;
   overflow-x: hidden;
   margin: 0;
@@ -12,43 +16,11 @@ html {
 }
 
 p {
-  color: floralwhite;
+  color: $forthColor;
+  font-size: 2rem;
 }
 
-/*INICIA NAV*/
-
-nav {
-  position: sticky;
-  top: 0;
-  width: 100%;
-}
-
-ul li {
-  margin: 1.5vw;
-}
-
-nav ul a:hover {
-  font-weight: 600;
-  color: #EAFF00;
-}
-
-.textNav {
-  font-family: 'Source Sans Pro', sans-serif;
-  color: floralwhite;
-  list-style: none;
-  text-decoration: none;
-  font-size: 1.5rem;
-}
-
-.bgBlackNav {
-  background-color: rgba(0, 0, 0, 1);
-  position: sticky;
-  top: 0;
-  width: 100%;
-}
-
-/*CIERRA NAV*/
-
+/*MOBILE*/
 /*INICIO INDEX*/
 
 .grid {
@@ -56,18 +28,6 @@ nav ul a:hover {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, auto);
   grid-template-areas: "nav" "head"  "s1"  "s2"  "s3"  "pie";
-}
-
-body {
-  background-image: url(../img/fondo1.jpg);
-}
-
-p {
-  font-size: 1.5rem;
-}
-
-nav a img {
-  width: 20vw;
 }
 
 .header {
@@ -88,19 +48,19 @@ nav a img {
 
 @keyframes h1 {
   0% {
-    color: #00D8FB;
+    color: $firstColor;
   }
 
   50% {
-    color: #CB00F6;
+    color: $secondColor;
   }
 
   75% {
-    color: #E4FF00;
+    color: $thirdColor;
   }
 
   100% {
-    color: pink;
+    color: rgb(255, 192, 203);
   }
 }
 
@@ -115,7 +75,7 @@ nav a img {
     .tc1 {
       a:hover {
         font-weight: 1000;
-        color: #EAFF00;
+        color: $thirdColor;
       }
 
       text-align: center;
@@ -173,11 +133,11 @@ nav a img {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, auto);
-  background-color: rgba(0, 0, 0, 1);
+  background-color: $fiftColor;
   text-align: center;
 
   p {
-    color: floralwhite;
+    color: $forthColor;
   }
 
   .fp {
@@ -194,155 +154,7 @@ nav a img {
   }
 }
 
-/*Break Point*/
-@media only screen and (min-width: 1024px) {
-  body {
-    background-image: url(../img/fondo1.png);
-  }
-
-  p {
-    font-size: 2rem;
-  }
-
-  .li1 {
-    margin-left: 55vw;
-  }
-
-  nav a img {
-    width: 8vw;
-  }
-
-  .header img {
-    height: 80vh;
-    width: 100%;
-  }
-
-  .seccion1 {
-    margin: 10px 10vw;
-
-    .caja1 {
-      .tc1 {
-        h1:hover {
-          color: #E4FF00;
-          font-weight: 900;
-        }
-
-        text-align: left;
-      }
-
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      margin: 10px auto;
-
-      .img1 {
-        display: flex;
-        justify-content: flex-end;
-        height: 40vh;
-
-        img {
-          width: 40vw;
-          height: auto;
-        }
-      }
-    }
-
-    .caja2 {
-      .tc2 {
-        h2:hover {
-          color: #E4FF00;
-          font-weight: 900;
-        }
-
-        text-align: left;
-      }
-
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      margin: 10px auto;
-
-      .img2 {
-        display: flex;
-        justify-content: flex-end;
-
-        img {
-          height: 40vh;
-          width: 40vw;
-        }
-      }
-    }
-
-    .caja3 {
-      .tc3 {
-        h3:hover {
-          color: #E4FF00;
-          font-weight: 900;
-        }
-
-        text-align: left;
-      }
-
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      margin: 10px auto;
-
-      .img3 {
-        display: flex;
-        justify-content: flex-end;
-
-        img {
-          height: 40vh;
-          width: 40vw;
-        }
-      }
-    }
-  }
-
-  .seccion2 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin: 10px 10vw;
-    display: flex;
-    align-items: center;
-
-    .textosum {
-      text-align: left;
-      order: 2;
-      margin: 10px;
-    }
-
-    .imgsum img {
-      height: 40vh;
-      width: 37vw;
-      order: 1;
-    }
-  }
-
-  .seccion3 iframe {
-    width: 50vw;
-  }
-
-  .footer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-template-areas: "fp iconos";
-  }
-
-  .fp {
-    grid-area: fp;
-  }
-
-  .iconos {
-    grid-area: iconos;
-  }
-
-  .footer .iconos img {
-    width: 40px;
-    margin: 5px auto;
-  }
-}
-
-/*FIN INDEX*/
+/*CIERRA INDEX*/
 
 /*INICIO COMPRA*/
 
@@ -351,10 +163,6 @@ nav a img {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, auto);
   grid-template-areas: "nav2" "destacados"  "filtros"  "productos"  "registro"  "pie2";
-}
-
-nav a img {
-  width: 20vw;
 }
 
 .destacados {
@@ -399,11 +207,11 @@ nav a img {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, auto);
-  background-color: rgba(0, 0, 0, 1);
+  background-color: $fiftColor;
   text-align: center;
 
   p {
-    color: floralwhite;
+    color: $forthColor;
   }
 
   .fp2 {
@@ -420,139 +228,6 @@ nav a img {
   }
 }
 
-/*Break Point*/
-@media only screen and (min-width: 1024px) {
-  body {
-    background-image: url(../img/fondo1.png);
-  }
-
-  p {
-    font-size: 2rem;
-  }
-
-  .li1 {
-    margin-left: 55vw;
-  }
-
-  nav a img {
-    width: 8vw;
-  }
-
-  .destacados .imgd {
-    width: 80vw;
-    height: 70vh;
-    margin: auto;
-
-    img {
-      width: 100%;
-      height: 69vh;
-    }
-  }
-
-  .grup {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas: "filtros" "productos";
-  }
-
-  .filtros {
-    margin-left: 45vw;
-    margin-right: 45vw;
-  }
-
-  .productos {
-    grid-area: productos;
-    margin: auto;
-
-    .card1 {
-      width: 20vw;
-      height: auto;
-      margin-right: 5vw;
-      margin-top: 5vh;
-      margin-bottom: 5vw;
-    }
-
-    .card2 {
-      width: 20vw;
-      height: auto;
-      margin-bottom: 5vw;
-    }
-
-    .card3 {
-      width: 20vw;
-      height: auto;
-      margin-right: 5vw;
-      margin-bottom: 5vw;
-    }
-
-    .card4 {
-      width: 20vw;
-      height: auto;
-      margin-bottom: 5vw;
-    }
-
-    .card5 {
-      width: 20vw;
-      height: auto;
-      margin-right: 5vw;
-    }
-
-    .card6 {
-      width: 20vw;
-      height: auto;
-      margin-bottom: 5vw;
-    }
-  }
-
-  .c1 {
-    grid-area: c1;
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: auto;
-  }
-
-  .c2 {
-    grid-area: c2;
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: auto;
-  }
-
-  .c3 {
-    grid-area: c3;
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: auto;
-  }
-
-  .registro form {
-    width: 30vw;
-    height: 18vh;
-    margin: 5px auto;
-  }
-
-  .footer2 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-template-areas: "fp iconos";
-  }
-
-  .fp2 {
-    grid-area: fp;
-  }
-
-  .iconos2 {
-    grid-area: iconos;
-  }
-
-  .footer2 .iconos2 img {
-    width: 40px;
-    margin: 5px auto;
-  }
-}
-
 /*FIN COMPRA*/
 
 /*INICIO ARREGLA*/
@@ -562,10 +237,6 @@ nav a img {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, auto);
   grid-template-areas: "nav3" "header1"  "form"  "ubicacion"  "opiniones"  "pie3";
-}
-
-nav a img {
-  width: 20vw;
 }
 
 .header1 {
@@ -654,11 +325,11 @@ nav a img {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, auto);
-  background-color: rgba(0, 0, 0, 1);
+  background-color: $fiftColor;
   text-align: center;
 
   p {
-    color: floralwhite;
+    color: $forthColor;
   }
 
   .fp3 {
@@ -675,127 +346,15 @@ nav a img {
   }
 }
 
-/*Break Point*/
-@media only screen and (min-width: 1024px) {
-  body {
-    background-image: url(../img/fondo1.png);
-  }
+/*FIN ARREGLA*/
 
-  p {
-    font-size: 2rem;
-  }
-
-  .li1 {
-    margin-left: 55vw;
-  }
-
-  nav a img {
-    width: 8vw;
-  }
-
-  .header1 {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: auto;
-    margin: 10px auto;
-
-    .texth {
-      width: 40vw;
-      margin-left: 10vw;
-    }
-
-    .imgh {
-      width: 40vw;
-
-      img {
-        width: 100%;
-        height: auto;
-      }
-    }
-  }
-
-  .form .divc {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: auto;
-    grid-template-areas: "div div2";
-  }
-
-  .div {
-    grid-area: div;
-    width: 30vw;
-    margin-left: 10vw;
-  }
-
-  .div2 {
-    grid-area: div2;
-    width: 30vw;
-  }
-
-  .grup1 {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: auto;
-    grid-template-areas: "ubi opp";
-  }
-
-  .opiniones {
-    grid-area: opp;
-    width: 40vw;
-    margin-top: 5vw;
-    margin-right: 10vw;
-  }
-
-  .ubicacion {
-    grid-area: ubi;
-    width: 40vw;
-    margin-right: 2vw;
-    margin-left: 10vw;
-    margin-top: 5vw;
-  }
-
-  .iframe2 {
-    width: 40vw;
-
-    iframe {
-      width: 100%;
-    }
-  }
-
-  .footer3 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-template-areas: "fp iconos";
-  }
-
-  .fp3 {
-    grid-area: fp;
-  }
-
-  .iconos3 {
-    grid-area: iconos;
-  }
-
-  .footer3 .iconos3 img {
-    width: 40px;
-    margin: 5px auto;
-  }
-}
-
-/*FIN ARREGLÁ*/
-
-/*INICIA CAMBIÁ*/
+/*INICIA CAMBIA*/
 
 .grid4 {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto auto auto;
   grid-template-areas: "nav4" "funcion"  "form2"  "encom"  "pie4";
-}
-
-nav a img {
-  width: 20vw;
 }
 
 .funcion {
@@ -835,11 +394,11 @@ nav a img {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, auto);
-  background-color: rgba(0, 0, 0, 1);
+  background-color: $fiftColor;
   text-align: center;
 
   p {
-    color: floralwhite;
+    color: $forthColor;
   }
 
   .fp4 {
@@ -856,77 +415,7 @@ nav a img {
   }
 }
 
-/*Break Point*/
-@media only screen and (min-width: 1024px) {
-  body {
-    background-image: url(../img/fondo1.png);
-  }
-
-  p {
-    font-size: 2rem;
-  }
-
-  .li1 {
-    margin-left: 55vw;
-  }
-
-  nav a img {
-    width: 8vw;
-  }
-
-  .grup2 {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: auto;
-    grid-template-areas: "funcion form2";
-  }
-
-  .funcion {
-    grid-area: funcion;
-    width: 40vw;
-    margin-left: 9vw;
-    margin-right: 8px;
-  }
-
-  .form2 {
-    grid-area: form2;
-    width: 40vw;
-    margin-right: 9vw;
-    margin-left: 8px;
-  }
-
-  .imgese {
-    width: 40vw;
-    margin: 5px auto;
-
-    a img {
-      width: 100%;
-      margin: auto;
-    }
-  }
-
-  .footer4 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-template-areas: "fp iconos";
-  }
-
-  .fp4 {
-    grid-area: fp;
-  }
-
-  .iconos4 {
-    grid-area: iconos;
-  }
-
-  .footer4 .iconos4 img {
-    width: 40px;
-    margin: 5px auto;
-  }
-}
-
-/*FIN CAMBIÁ*/
+/*FIN CAMBIA*/
 
 /*INICIO SUMATE*/
 
@@ -935,10 +424,6 @@ nav a img {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(7, auto);
   grid-template-areas: "nav5" "header3"  "certf"  "posb"  "inscr"  "graduados"  "pie5";
-}
-
-nav a img {
-  width: 20vw;
 }
 
 .header3 {
@@ -1036,11 +521,11 @@ nav a img {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, auto);
-  background-color: rgba(0, 0, 0, 1);
+  background-color: $fiftColor;
   text-align: center;
 
   p {
-    color: floralwhite;
+    color: $forthColor;
   }
 
   .fp5 {
@@ -1057,221 +542,7 @@ nav a img {
   }
 }
 
-/*Break Point*/
-@media only screen and (min-width: 1024px) {
-  body {
-    background-image: url(../img/fondo1.png);
-  }
-
-  p {
-    font-size: 2rem;
-  }
-
-  .li1 {
-    margin-left: 55vw;
-  }
-
-  nav a img {
-    width: 8vw;
-  }
-
-  .header3 {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: auto;
-    grid-template-areas: "txt3 ih3";
-
-    .texth3 {
-      grid-area: txt3;
-      width: 40vw;
-      margin: 5px auto;
-    }
-  }
-
-  .imghead3 {
-    grid-area: ih3;
-    width: 40vw;
-    margin: 5px auto;
-
-    img {
-      width: 40vw;
-      margin: 5px auto;
-    }
-  }
-
-  .inscribir {
-    width: 40vw;
-  }
-
-  .grup5 {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: auto;
-    grid-template-areas: "certificacion sumarte";
-  }
-
-  .certificacion {
-    grid-area: certificacion;
-    width: 40vw;
-    margin: 10px auto;
-  }
-
-  .posibilidad {
-    grid-area: sumarte;
-    width: 40vw;
-    margin: 10px auto;
-  }
-
-  .graduados {
-    .persona1 {
-      display: flex;
-      align-items: center;
-
-      .perfil {
-        width: 30vw;
-        margin-right: 20vw;
-      }
-
-      .imgradu {
-        width: 30vw;
-        height: 30vw;
-        margin-left: 20vw;
-
-        img {
-          width: 100%;
-          height: auto;
-        }
-      }
-    }
-
-    .persona2 {
-      display: flex;
-      align-items: center;
-
-      .perfil1 {
-        width: 30vw;
-        margin-right: 20vw;
-      }
-
-      .imgradu1 {
-        width: 30vw;
-        height: 30vw;
-        margin-left: 20vw;
-
-        img {
-          width: 100%;
-          height: auto;
-        }
-      }
-    }
-  }
-
-  .footer5 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-template-areas: "fp iconos";
-  }
-
-  .fp5 {
-    grid-area: fp;
-  }
-
-  .iconos5 {
-    grid-area: iconos;
-  }
-
-  .footer5 .iconos5 img {
-    width: 40px;
-    margin: 5px auto;
-  }
-}
-
 /*FIN SUMATE*/
+/*FIN MOBILE*/
 
-/*CLASES*/
-
-.textCenter {
-  text-align: center;
-}
-
-.textWhite {
-  color: floralwhite;
-}
-
-.textBlack {
-  color: black;
-}
-
-.textY {
-  color: #E4FF00;
-}
-
-.textGrey {
-  color: #8C8C8C;
-}
-
-.textViolet {
-  color: #CB00F6;
-}
-
-.textCel {
-  color: #00D8FB;
-}
-
-.transform2:hover {
-  color: #00D8FB;
-  transform: scaleX(1.2);
-  cursor: pointer;
-  transition: 1s;
-}
-
-.fontAshkar {
-  font-family: 'Akshar', sans-serif;
-}
-
-.fontX {
-  font-family: 'Staatliches', cursive;
-}
-
-.fontSize1 {
-  font-size: 1.5rem;
-}
-
-.fontSize2 {
-  font-size: 2rem;
-}
-
-.fontSize3 {
-  font-size: 3.5rem;
-}
-
-.borderYellow {
-  border: double #E4FF00 3px;
-}
-
-.borderCeleste {
-  border: double #00D8FB 3px;
-}
-
-.borderViolet {
-  border: double #CB00F6 3px;
-}
-
-.borderWhite {
-  border: double ghostwhite 3px;
-}
-
-.borderRadius {
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-
-.borderRadius1 {
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-}
+@import "_bpoints";

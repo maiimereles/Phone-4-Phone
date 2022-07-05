@@ -1,0 +1,97 @@
+//import de fonts family
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300;400&family=Bebas+Neue&family=Grape+Nuts&family=Koulen&family=Montserrat&family=Oswald:wght@300;400&family=Roboto:wght@300&display=League+Gothic&family=Source+Sans+Pro&family=Staatliches&display=swap');
+
+//vars de los colores
+$firstColor: rgb(0, 216, 251);
+$secondColor: rgb(203, 0, 246);
+$thirdColor: rgb(228, 255, 0);
+$forthColor: rgb(255, 250, 240);
+$fiftColor: rgba(0, 0, 0, 1);
+$sextColor: rgb(140, 140, 140);
+$sevenColor: rgb(248, 248, 255);
+
+/*CLASES*/
+.textCenter {
+    text-align: center;
+  }
+  
+  .textWhite {
+    color: $forthColor;
+  }
+  
+  .textBlack {
+    color: $fiftColor;
+  }
+  
+  .textY {
+    color: $thirdColor;
+  }
+  
+  .textGrey {
+    color: $sextColor;
+  }
+  
+  .textViolet {
+    color: $secondColor;
+  }
+  
+  .textCel {
+    color: $firstColor;
+  }
+  
+  .transform2:hover {
+    color: $firstColor;
+    transform: scaleX(1.2);
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  .fontAshkar {
+    font-family: 'Akshar', sans-serif;
+  }
+  
+  .fontX {
+    font-family: 'Staatliches', cursive;
+  }
+  
+  .fontSize1 {
+    font-size: 1.5rem;
+  }
+  
+  .fontSize2 {
+    font-size: 2rem;
+  }
+  
+  .fontSize3 {
+    font-size: 3.5rem;
+  }
+  
+  .borderYellow {
+    border: double $thirdColor 3px;
+  }
+  
+  .borderCeleste {
+    border: double $firstColor 3px;
+  }
+  
+  .borderViolet {
+    border: double $secondColor 3px;
+  }
+  
+  .borderWhite {
+    border: double $sevenColor 3px;
+  }
+  
+  .borderRadius {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  .borderRadius1 {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }

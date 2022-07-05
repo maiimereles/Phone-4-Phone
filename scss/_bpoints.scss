@@ -1,0 +1,535 @@
+/*DESKTOP*/
+/*INDEX*/
+@media only screen and (min-width: 1024px) {
+    body {
+      background-image: url(../img/fondo1.png);
+    }
+  
+    p {
+      font-size: 2rem;
+    }
+  
+    .header img {
+      height: 80vh;
+      width: 100%;
+    }
+  
+    .seccion1 {
+      margin: 10px 10vw;
+  
+      .caja1 {
+        .tc1 {
+          h1:hover {
+            color: #E4FF00;
+            font-weight: 900;
+          }
+  
+          text-align: left;
+        }
+  
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 10px auto;
+  
+        .img1 {
+          display: flex;
+          justify-content: flex-end;
+          height: 40vh;
+  
+          img {
+            width: 40vw;
+            height: auto;
+          }
+        }
+      }
+  
+      .caja2 {
+        .tc2 {
+          h2:hover {
+            color: #E4FF00;
+            font-weight: 900;
+          }
+  
+          text-align: left;
+        }
+  
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 10px auto;
+  
+        .img2 {
+          display: flex;
+          justify-content: flex-end;
+  
+          img {
+            height: 40vh;
+            width: 40vw;
+          }
+        }
+      }
+  
+      .caja3 {
+        .tc3 {
+          h3:hover {
+            color: #E4FF00;
+            font-weight: 900;
+          }
+  
+          text-align: left;
+        }
+  
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 10px auto;
+  
+        .img3 {
+          display: flex;
+          justify-content: flex-end;
+  
+          img {
+            height: 40vh;
+            width: 40vw;
+          }
+        }
+      }
+    }
+  
+    .seccion2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin: 10px 10vw;
+      display: flex;
+      align-items: center;
+  
+      .textosum {
+        text-align: left;
+        order: 2;
+        margin: 10px;
+      }
+  
+      .imgsum img {
+        height: 40vh;
+        width: 37vw;
+        order: 1;
+      }
+    }
+  
+    .seccion3 iframe {
+      width: 50vw;
+    }
+  
+    .footer {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr;
+      grid-template-areas: "fp iconos";
+    }
+  
+    .fp {
+      grid-area: fp;
+    }
+  
+    .iconos {
+      grid-area: iconos;
+    }
+  
+    .footer .iconos img {
+      width: 40px;
+      margin: 5px auto;
+    }
+  
+    /*FIN INDEX*/
+  
+    /*COMPRA*/
+  
+    .destacados .imgd {
+      width: 80vw;
+      height: 70vh;
+      margin: auto;
+  
+      img {
+        width: 100%;
+        height: 69vh;
+      }
+    }
+  
+    .grup {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto auto;
+      grid-template-areas: "filtros" "productos";
+    }
+  
+    .filtros {
+      margin-left: 45vw;
+      margin-right: 45vw;
+    }
+  
+    .productos {
+      grid-area: productos;
+      margin: auto;
+  
+      .card1 {
+        width: 20vw;
+        height: auto;
+        margin-right: 5vw;
+        margin-top: 5vh;
+        margin-bottom: 5vw;
+      }
+  
+      .card2 {
+        width: 20vw;
+        height: auto;
+        margin-bottom: 5vw;
+      }
+  
+      .card3 {
+        width: 20vw;
+        height: auto;
+        margin-right: 5vw;
+        margin-bottom: 5vw;
+      }
+  
+      .card4 {
+        width: 20vw;
+        height: auto;
+        margin-bottom: 5vw;
+      }
+  
+      .card5 {
+        width: 20vw;
+        height: auto;
+        margin-right: 5vw;
+      }
+  
+      .card6 {
+        width: 20vw;
+        height: auto;
+        margin-bottom: 5vw;
+      }
+    }
+  
+    .c1 {
+      grid-area: c1;
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      grid-template-rows: auto;
+    }
+  
+    .c2 {
+      grid-area: c2;
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      grid-template-rows: auto;
+    }
+  
+    .c3 {
+      grid-area: c3;
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      grid-template-rows: auto;
+    }
+  
+    .registro form {
+      width: 30vw;
+      height: 18vh;
+      margin: 5px auto;
+    }
+  
+    .footer2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr;
+      grid-template-areas: "fp iconos";
+    }
+  
+    .fp2 {
+      grid-area: fp;
+    }
+  
+    .iconos2 {
+      grid-area: iconos;
+    }
+  
+    .footer2 .iconos2 img {
+      width: 40px;
+      margin: 5px auto;
+    }
+  
+    /*FIN COMPRA*/
+  
+    /*ARREGLA*/
+  
+    .header1 {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      grid-template-rows: auto;
+      margin: 10px auto;
+  
+      .texth {
+        width: 40vw;
+        margin-left: 10vw;
+      }
+  
+      .imgh {
+        width: 40vw;
+  
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+
+    .form{
+        margin-left: 10vw;
+    }
+
+    .form h2{
+        margin-left: 10vw;
+    }
+
+    .form p{
+        margin-left: 10vw;
+    }
+  
+    .form .divc {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      grid-template-rows: auto;
+      grid-template-areas: "div div2";
+    }
+  
+    .div {
+      grid-area: div;
+      width: 30vw;
+      margin-left: 10vw;
+    }
+  
+    .div2 {
+      grid-area: div2;
+      width: 30vw;
+    }
+  
+    .grup1 {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      grid-template-rows: auto;
+      grid-template-areas: "ubi opp";
+    }
+  
+    .opiniones {
+      grid-area: opp;
+      width: 40vw;
+      margin-top: 5vw;
+      margin-right: 10vw;
+    }
+  
+    .ubicacion {
+      grid-area: ubi;
+      width: 40vw;
+      margin-right: 2vw;
+      margin-left: 10vw;
+      margin-top: 5vw;
+    }
+  
+    .iframe2 {
+      width: 40vw;
+  
+      iframe {
+        width: 100%;
+      }
+    }
+  
+    .footer3 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr;
+      grid-template-areas: "fp iconos";
+    }
+  
+    .fp3 {
+      grid-area: fp;
+    }
+  
+    .iconos3 {
+      grid-area: iconos;
+    }
+  
+    .footer3 .iconos3 img {
+      width: 40px;
+      margin: 5px auto;
+    }
+  
+    /*FIN ARREGLÁ*/
+  
+    /*CAMBIA*/
+  
+    .grup2 {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      grid-template-rows: auto;
+      grid-template-areas: "funcion form2";
+    }
+  
+    .funcion {
+      grid-area: funcion;
+      width: 40vw;
+      margin-left: 9vw;
+      margin-right: 8px;
+    }
+  
+    .form2 {
+      grid-area: form2;
+      width: 40vw;
+      margin-right: 9vw;
+      margin-left: 8px;
+    }
+  
+    .imgese {
+      width: 40vw;
+      margin: 5px auto;
+  
+      a img {
+        width: 100%;
+        margin: auto;
+      }
+    }
+  
+    .footer4 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr;
+      grid-template-areas: "fp iconos";
+    }
+  
+    .fp4 {
+      grid-area: fp;
+    }
+  
+    .iconos4 {
+      grid-area: iconos;
+    }
+  
+    .footer4 .iconos4 img {
+      width: 40px;
+      margin: 5px auto;
+    }
+  
+    /*FIN CAMBIA*/
+  
+    /*SUMATE*/
+  
+    .header3 {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      grid-template-rows: auto;
+      grid-template-areas: "txt3 ih3";
+  
+      .texth3 {
+        grid-area: txt3;
+        width: 40vw;
+        margin: 5px auto;
+      }
+    }
+  
+    .imghead3 {
+      grid-area: ih3;
+      width: 40vw;
+      margin: 5px auto;
+  
+      img {
+        width: 40vw;
+        margin: 5px auto;
+      }
+    }
+  
+    .inscribir {
+      width: 40vw;
+    }
+  
+    .grup5 {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      grid-template-rows: auto;
+      grid-template-areas: "certificacion sumarte";
+    }
+  
+    .certificacion {
+      grid-area: certificacion;
+      width: 40vw;
+      margin: 10px auto;
+    }
+  
+    .posibilidad {
+      grid-area: sumarte;
+      width: 40vw;
+      margin: 10px auto;
+    }
+  
+    .graduados {
+      .persona1 {
+        display: flex;
+        align-items: center;
+  
+        .perfil {
+          width: 30vw;
+          margin-right: 20vw;
+        }
+  
+        .imgradu {
+          width: 30vw;
+          height: 30vw;
+          margin-left: 20vw;
+  
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+  
+      .persona2 {
+        display: flex;
+        align-items: center;
+  
+        .perfil1 {
+          width: 30vw;
+          margin-right: 20vw;
+        }
+  
+        .imgradu1 {
+          width: 30vw;
+          height: 30vw;
+          margin-left: 20vw;
+  
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+  
+    .footer5 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr;
+      grid-template-areas: "fp iconos";
+    }
+  
+    .fp5 {
+      grid-area: fp;
+    }
+  
+    .iconos5 {
+      grid-area: iconos;
+    }
+  
+    .footer5 .iconos5 img {
+      width: 40px;
+      margin: 5px auto;
+    }
+  }
+  /*FIN SUMATE*/
+  /*FIN DESKTOP*/

@@ -1,0 +1,10 @@
+
+
+@mixin texto($font-size, $line-height){
+    font-size: $font-size;
+    line-height: $line-height;
+}
+
+p{
+    @include texto(2rem, 2.5rem)
+}
