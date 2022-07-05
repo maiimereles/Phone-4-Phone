@@ -33,11 +33,15 @@ nav ul a:hover {
 }
 
 @media only screen and (min-width: 1024px) {
-  .li1 {
-    margin-left: 55vw;
-  }
+  /*Extend*/
+  nav{
+    @extend nav;
+    .li1 {
+      margin-left: 55vw;
+    }
 
-  nav a img {
-    width: 8vw;
+    nav a img {
+      width: 8vw;
+    } 
   }
 }
