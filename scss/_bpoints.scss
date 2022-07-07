@@ -34,7 +34,6 @@
         .img1 {
           display: flex;
           justify-content: flex-end;
-          height: 40vh;
   
           img {
             width: 40vw;
@@ -62,8 +61,8 @@
           justify-content: flex-end;
   
           img {
-            height: 40vh;
             width: 40vw;
+            height: auto;
           }
         }
       }
@@ -87,8 +86,8 @@
           justify-content: flex-end;
   
           img {
-            height: 40vh;
             width: 40vw;
+            height: 40vh;
           }
         }
       }
@@ -137,11 +136,9 @@
       width: 40px;
       margin: 5px auto;
     }
-  
     /*FIN INDEX*/
   
     /*COMPRA*/
-  
     .destacados .imgd {
       width: 80vw;
       height: 70vh;
@@ -232,7 +229,7 @@
   
     .registro form {
       width: 30vw;
-      height: 18vh;
+      height: auto;
       margin: 5px auto;
     }
   
@@ -255,11 +252,9 @@
       width: 40px;
       margin: 5px auto;
     }
-  
     /*FIN COMPRA*/
   
-    /*ARREGLA*/
-  
+    /*ARREGLA*/ 
     .header1 {
       display: grid;
       grid-template-columns: repeat(2, auto);
@@ -415,11 +410,9 @@
       width: 40px;
       margin: 5px auto;
     }
-  
     /*FIN CAMBIA*/
   
     /*SUMATE*/
-  
     .header3 {
       display: grid;
       grid-template-columns: repeat(2, auto);
@@ -429,14 +422,14 @@
       .texth3 {
         grid-area: txt3;
         width: 40vw;
-        margin: 5px auto;
+        margin: 5vh auto;
       }
     }
   
     .imghead3 {
       grid-area: ih3;
       width: 40vw;
-      margin: 5px auto;
+      margin: 1vh auto;
   
       img {
         width: 40vw;

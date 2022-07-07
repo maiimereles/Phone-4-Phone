@@ -8,17 +8,12 @@ p{
 }
 
 //maps
-
-$paleta: (
-    'uno': #00d8fb;
-    'dos': rgb(203, 0, 246);
-    'tres': rgb(228, 255, 0);
-    'cuatro': rgb(255, 250, 240);
-    'cinco': rgba(0, 0, 0, 1);
-    'seis': rgb(140, 140, 140);
-    'siete': rgb(248, 248, 255);
-)
-
-nav{
-    background-color: map-get($map:$paleta, $key:'cinco')
-}
+$paleta: ('uno': #00d8fb, 
+    'dos': rgb(203, 0, 246),
+    'tres': rgb(228, 255, 0),
+    'cuatro': rgb(255, 250, 240),
+    'cinco': rgba(0, 0, 0, 1),
+    'seis': rgb(140, 140, 140),
+    'siete': rgb(248, 248, 255),
+);
+//aplicado en _nav.scss

@@ -6,6 +6,7 @@
 	<title>Phone4Phone-cambiar mi celular</title>
 	<meta name="description" content="Cambia tu celular por uno mejor a un precio super economico."> 
 	<meta name="author" content="Maira Elizabeth Mereles">
+	<meta name="keywords" content="compra, arregla, sumate, cambia, celulares"> 
 	<link rel="shortcut icon" href="img/favicon.png">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
@@ -47,25 +48,28 @@
 			<h2 class="textViolet fontX fontSize3">¿Querés saber si tu celu aplica a éste método?</h2>
 		    </div>
 		    <div class="form4 textWhite">
-		    	<form action="envio.php" method="post">
-		    		<label for="marca">Colocá la marca de tu celular</label>
-		    		<br>
-		    		<input type="text" name="marca" id="marca" placeholder="Samsung">
-		    		<br>
-		    		<label for="modelo">Colocá el modelo</label>
-		    		<br>
-		    		<input type="text" name="modelo" id="modelo" placeholder="A12">
-		    		<p class="textGrey">Te recordamos que si tu celu está roto no es aplicable éste método</p>
-		    		<input type="submit" value="Aceptar">
-		    	</form>
+
+                <form action="envio.php" method="post">
+					<div class="mb-3">
+					  <label for="marca" class="form-label">Colocá la marca de tu celular</label>
+					  <input type="text" class="form-control" id="marca" placeholder="Samsung">
+					</div>
+					<div class="mb-3">
+					  <label for="modelo" class="form-label">Colocá el modelo</label>
+					  <input type="text" class="form-control" id="modelo" placeholder="A12">
+					</div>
+					<p class="textGrey">Te recordamos que si tu celu está roto no es aplicable éste método</p>
+					<button type="submit" class="btn btn-primary">Aceptar</button>
+				</form>
 		    </div>
 		</div>
 	</div>
 
 		<div class="encom">
-			<h3 class="textY fontX fontSize3">En nuestra sección de compra podrás ver nuestros productos</h3>
+			<h3 class="textY fontX fontSize3">En nuestra sección de "comprá" podrás ver nuestros productos</h3>
+			<p class="textGrey">Haz click en la imágen</p>
 			<div class="imgese borderYellow borderRadius">
-			<a href="compra.html"><img src="img/images2.jpg" alt="enlace a la pagina de compra"></a>
+			<a href="compra.html"><img src="img/imgcompra.jpg" alt="enlace a la pagina de compra"></a>
 		    </div>
 		</div>
 

@@ -1,7 +1,7 @@
 nav {
+  background-color: map-get($map:$paleta, $key:'cinco');
   position: sticky;
   top: 0;
-  width: 100%;
 
   a img {
     width: 20vw;
@@ -26,21 +26,18 @@ nav ul a:hover {
 }
 
 .bgBlackNav {
-  background-color: rgba(0, 0, 0, 1);
   position: sticky;
   top: 0;
   width: 100%;
 }
 
 @media only screen and (min-width: 1024px) {
-  /*Extend*/
   nav{
-    @extend nav;
     .li1 {
       margin-left: 55vw;
     }
 
-    nav a img {
+    a img {
       width: 8vw;
     } 
   }

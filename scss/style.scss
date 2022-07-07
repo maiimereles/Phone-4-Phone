@@ -1,11 +1,11 @@
 //imports
-@import "_nav";
 @import "_var";
 @import "_mixins";
+@import "_nav";
 
 body {
   background-image: url(../img/fondo1.jpg);
-  font-family: 'Akshar', sans-serif;
+  font-family: "Akshar", sans-serif;
   overflow-x: hidden;
   margin: 0;
   padding: 0;
@@ -22,12 +22,11 @@ p {
 
 /*MOBILE*/
 /*INICIO INDEX*/
-
 .grid {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, auto);
-  grid-template-areas: "nav" "head"  "s1"  "s2"  "s3"  "pie";
+  grid-template-areas: "nav" "head" "s1" "s2" "s3" "pie";
 }
 
 .header {
@@ -42,7 +41,7 @@ p {
   animation-name: h1;
   animation-timing-function: ease-in;
   animation-duration: 6s;
-  animation-delay: .5s;
+  animation-delay: 0.5s;
   animation-iteration-count: infinite;
 }
 
@@ -73,16 +72,16 @@ p {
 
   .caja1 {
     .tc1 {
-      a:hover {
-        font-weight: 1000;
-        color: $thirdColor;
-      }
-
       text-align: center;
     }
 
-    .img1 img {
-      width: 100%;
+    .img1 {
+      margin-left: 2vw;
+      margin-right: 2vw;
+
+      img {
+        width: 100%;
+      }
     }
   }
 
@@ -91,8 +90,13 @@ p {
       text-align: center;
     }
 
-    .img2 img {
-      width: 100%;
+    .img2 {
+      margin-left: 2vw;
+      margin-right: 2vw;
+
+      img {
+        width: 100%;
+      }
     }
   }
 
@@ -101,8 +105,13 @@ p {
       text-align: center;
     }
 
-    .img3 img {
-      width: 100%;
+    .img3 {
+      margin-left: 2vw;
+      margin-right: 2vw;
+
+      img {
+        width: 100%;
+      }
     }
   }
 }
@@ -118,8 +127,13 @@ p {
     text-align: center;
   }
 
-  .imgsum img {
-    width: 100%;
+  .imgsum {
+    margin-left: 2vw;
+    margin-right: 2vw;
+
+    img {
+      width: 100%;
+    }
   }
 }
 
@@ -153,16 +167,14 @@ p {
     }
   }
 }
-
 /*CIERRA INDEX*/
 
 /*INICIO COMPRA*/
-
 .grid2 {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, auto);
-  grid-template-areas: "nav2" "destacados"  "filtros"  "productos"  "registro"  "pie2";
+  grid-template-areas: "nav2" "destacados" "filtros" "productos" "registro" "pie";
 }
 
 .destacados {
@@ -175,6 +187,8 @@ p {
 
 .filtros {
   grid-area: filtros;
+  margin-bottom: 5vh;
+  margin-top: 5vh;
 
   .ff {
     font-size: 1.5rem;
@@ -185,7 +199,12 @@ p {
   grid-area: productos;
   margin: 2px auto;
 
-  .card1, .card2, .card3, .card4, .card5, .card6 {
+  .card1,
+  .card2,
+  .card3,
+  .card4,
+  .card5,
+  .card6 {
     width: 80vw;
     height: auto;
     margin: auto;
@@ -203,16 +222,7 @@ p {
 }
 
 .footer2 {
-  grid-area: pie2;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, auto);
-  background-color: $fiftColor;
-  text-align: center;
-
-  p {
-    color: $forthColor;
-  }
+  @extend .footer;
 
   .fp2 {
     order: 2;
@@ -227,16 +237,14 @@ p {
     }
   }
 }
-
 /*FIN COMPRA*/
 
 /*INICIO ARREGLA*/
-
 .grid3 {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, auto);
-  grid-template-areas: "nav3" "header1"  "form"  "ubicacion"  "opiniones"  "pie3";
+  grid-template-areas: "nav3" "header1" "form" "ubicacion" "opiniones" "pie";
 }
 
 .header1 {
@@ -289,7 +297,7 @@ p {
   display: grid;
   grid-template-columns: repeat(2, auto);
   grid-template-rows: auto auto auto auto;
-  grid-template-areas: "h h" "op1i op1t"  "op2i op2t"  "op3i op3t";
+  grid-template-areas: "h h" "op1i op1t" "op2i op2t" "op3i op3t";
 }
 
 .h {
@@ -321,16 +329,7 @@ p {
 }
 
 .footer3 {
-  grid-area: pie3;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, auto);
-  background-color: $fiftColor;
-  text-align: center;
-
-  p {
-    color: $forthColor;
-  }
+  @extend .footer;
 
   .fp3 {
     order: 2;
@@ -345,28 +344,30 @@ p {
     }
   }
 }
-
 /*FIN ARREGLA*/
 
 /*INICIA CAMBIA*/
-
 .grid4 {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto auto auto;
-  grid-template-areas: "nav4" "funcion"  "form2"  "encom"  "pie4";
+  grid-template-areas: "nav4" "funcion" "form2" "encom" "pie";
 }
 
 .funcion {
   grid-area: funcion;
   text-align: center;
   margin-top: 5vh;
+  margin-left: 3px;
+  margin-right: 3px;
 }
 
 .form2 {
   grid-area: form2;
   text-align: center;
   margin-top: 5vh;
+  margin-left: 3px;
+  margin-right: 3px;
 }
 
 .form4 {
@@ -377,6 +378,8 @@ p {
   grid-area: encom;
   text-align: center;
   margin-top: 5vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 
 .imge {
@@ -390,16 +393,7 @@ p {
 }
 
 .footer4 {
-  grid-area: pie4;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, auto);
-  background-color: $fiftColor;
-  text-align: center;
-
-  p {
-    color: $forthColor;
-  }
+  @extend .footer;
 
   .fp4 {
     order: 2;
@@ -414,16 +408,14 @@ p {
     }
   }
 }
-
 /*FIN CAMBIA*/
 
 /*INICIO SUMATE*/
-
 .grid5 {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(7, auto);
-  grid-template-areas: "nav5" "header3"  "certf"  "posb"  "inscr"  "graduados"  "pie5";
+  grid-template-areas: "nav5" "header3" "certf" "posb" "inscr" "graduados" "pie";
 }
 
 .header3 {
@@ -517,16 +509,7 @@ p {
 }
 
 .footer5 {
-  grid-area: pie5;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, auto);
-  background-color: $fiftColor;
-  text-align: center;
-
-  p {
-    color: $forthColor;
-  }
+  @extend .footer;
 
   .fp5 {
     order: 2;
@@ -541,8 +524,8 @@ p {
     }
   }
 }
-
 /*FIN SUMATE*/
 /*FIN MOBILE*/
+
 
 @import "_bpoints";
