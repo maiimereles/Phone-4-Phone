@@ -4,7 +4,7 @@
 @import "_nav";
 
 body {
-  background-image: url(../img/fondo1.jpg);
+  background-image: url(../img/fondo1.webp);
   font-family: "Akshar", sans-serif;
   overflow-x: hidden;
   margin: 0;
@@ -525,6 +525,28 @@ p {
   }
 }
 /*FIN SUMATE*/
+
+/*ERROR 404*/
+.error1{
+  img{
+    width: 100%;
+    margin: auto;
+  }
+}
+
+.error2{
+  p{
+    font-size: 2rem;
+  }
+
+  .btn{
+    height: 7vh;
+    width: 30vw;
+    background-color: map-get($map:$paleta, $key:'ocho');
+    font-size: 1.5rem;
+  }
+}
+/*FIN ERROR 404*/
 /*FIN MOBILE*/
 
 
