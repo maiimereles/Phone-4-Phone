@@ -1,5 +1,13 @@
 /*TABLET*/
 @media only screen and (min-width: 600px){
+//index
+.header{
+  img{
+    height: 40vh;
+  }
+}
+//cierra index
+//compra
 .grup {
   display: grid;
   grid-template-columns: 1fr;
@@ -614,18 +622,17 @@
 
   .error1{
     grid-area: er1;
-    width: 50vw;
+    width: 45vw;
     height: auto;
-    margin-left: 5vw;
   }
 
   .error2{
     grid-area: er2;
-    width: 50vw;
-    margin-top: 40vh;
+    width: 30vw;
+    margin-right: 5vw;
+    margin-top: 30vh;
 
     .btn{
-      height: 6vh;
       width: 9vw;
       background-color: map-get($map:$paleta, $key:'ocho');
       font-size: 1.5rem;
